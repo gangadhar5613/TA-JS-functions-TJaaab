@@ -278,7 +278,7 @@ let oddOrEven = function(number){
 
 // - Write an named Function Expression
 
-let oddOrEven = function (number){
+const  ODD_EVEN = function oddOrEven(number){
   if(number % 2 ==0){
     return "Number is even";
   }else {
