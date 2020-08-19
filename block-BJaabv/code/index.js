@@ -8,11 +8,12 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge(puppyAge = 7) {
-   let puppyAge = `1:${puppyage}`;
-   return puppyAge;
+function calculateDogAge(puppyAge ,conversion = 7) {
+   
+   return puppyAge * conversion;
   
 }
+
 
 /*
 2. 🎖Write a function named calculateMoviesToWatch that:
@@ -22,9 +23,9 @@ function calculateDogAge(puppyAge = 7) {
 */
 
 function calculateMoviesToWatch(age,numberOfMovies) {
-  for(i=age;i<=100;i++){
-    
-  }return ((numberOfMovies * 4) * 12 )*i;
+ const maxAge = 100;
+ let totalMovies = (maxAge - age) * numberOfMovies * 4 * 12;
+ return totalMovies;
 }
 
 /*
@@ -61,7 +62,7 @@ function pow(n,x) {
   if (n < 0){
     return ("The number below 1 is not allowed");
   }
-  return ( x**n );
+  return  x**n ;
 }
 
 // Test
@@ -106,10 +107,10 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 
 function sumOfN(n) {
   let sum =0;
-  for (i=1;i<=n;i++){
+  for (let i=1;i<=n;i++){
     sum = sum+i;
-    return sum;
-  }
+    
+  }return sum;
 }
 
 /*
